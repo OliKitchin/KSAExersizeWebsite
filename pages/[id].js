@@ -52,6 +52,15 @@ const renderNestedList = (block) => {
   )
 }
 
+const renderNestedQuote = (block) => {
+  const { type } = block;
+  const value = block[type];
+  if (!value) return null;
+  return (
+      value.children.map((block) => renderBlock(block))
+  )
+}
+
 const renderBlock = (block) => {
   const { type, id } = block;
   const value = block[type];
@@ -124,7 +133,14 @@ const renderBlock = (block) => {
     case "divider":
       return <hr key={id} />;
     case "quote":
-      return <blockquote key={id}>{value.text[0].plain_text}</blockquote>;
+      return (
+        <div>
+        <p className={styles.quote}>
+          <Text text={value.text}/>
+          {!!value.children && renderNestedQuote(block)}
+        </p>
+        </div>
+      )
     case "code":
       return (
         <pre className={styles.pre}>
@@ -168,26 +184,38 @@ export default function Post({ page, blocks }) {
   if (!page || !blocks) {
     return <div />;
   }
+  const date = new Date(page.last_edited_time).toLocaleString(
+    "en-US",
+    {
+      month: "short",
+      day: "2-digit",
+      year: "numeric",
+    }
+  );
   return (
     <div>
       <Head>
         <title>{page.properties.Name.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
-      <article className={styles.container}>
+      <main className={styles.container}>
+      <article className={styles.maincontent}>
         <h1 className={styles.name}>
           <Text text={page.properties.Name.title} />
         </h1>
+        <div className={styles.descriptionBox}>
+          <p className={styles.postDescription}>{date}</p>
+          <Link href="/writing">
+            <a>All Posts</a>
+          </Link>
+        </div>
         <section>
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
-          <Link href="/">
-            <a className={styles.back}>← Go home</a>
-          </Link>
         </section>
       </article>
+      </main>
     </div>
   );
 }

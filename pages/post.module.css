@@ -1,8 +1,61 @@
 .container {
-  padding: 0 20px;
-  max-width: 700px;
+  padding: 20px 20px 20px;
   margin: 0 auto;
-  line-height: 1.5;
+  display: block;
+  text-align: center;
+}
+
+.nav {
+  padding: 10px;
+  display: block;
+}
+
+.maincontent {
+  text-align: left;
+  padding-top: 50px;
+  width: 100%;
+  display: inline-block;
+  max-width: 750px;
+}
+
+.navlist {
+  list-style-type: none;
+  text-align: center;
+  padding: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 0px;
+  margin: auto;
+  border-bottom: 2px solid rgb(185, 185, 185);
+  border-top: 2px solid rgb(185, 185, 185);
+  max-width: 350px;
+}
+
+.navlist li {
+  display: inline-block;
+  font-size: 0;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.navlistitem a {
+  display:inline-block;
+  text-align:center;
+  font: normal 16px arial;
+  color: rgb(130, 130, 130);
+}
+
+.navlistitem a:hover {
+  color:rgb(0, 0, 0);
+}
+
+.navline {
+  text-align: center;
+  background-color: rgb(185, 185, 185);
+}
+
+.postcontent {
+  text-align: left;
 }
 
 .container h1 {
@@ -25,11 +78,55 @@
 
 .name {
   font-size: 36px;
+  text-align: left;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 10px;
+  padding-top: 20px;
+  margin-bottom: 5px;
+}
+
+.descriptionBox {
+  display: float;
+  margin-bottom: 40px;
+  height: 10px;
+  font-size: 85%;
+}
+
+.descriptionBox a {
+  float: right;
+  text-align: right;
+  margin: 0;
+}
+
+.descriptionBox p {
+  float: left;
+  color: #888;
+  text-align: left;
+  margin: 0;
+}
+
+.descriptionBox a:hover {
+  text-decoration: underline;
+}
+
+
+
+.heading {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #dedede;
+  text-transform: uppercase;
+  font-size: 15px;
+  opacity: 0.6;
+  letter-spacing: 0.5px;
+  justify-content: center;
+  text-align: left;
 }
 
 .back {
   display: inline-block;
   margin-bottom: 20px;
+  text-align: left;
 }
 
 .bold {
@@ -93,6 +190,12 @@
 .bookmark {
   display: block;
   margin-bottom: 10px;
+}
+
+.quote {
+  border-left: 3px solid rgb(51,50,50);
+  margin-left: 0px;
+  padding-left: 10px;
 }
 
 @media (prefers-color-scheme: dark) {
