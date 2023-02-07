@@ -17,7 +17,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Oli Kitchin</title>
+        <title>David</title>
         <link rel="icon" href="/favicon.png" />
       </Head>
 
@@ -25,8 +25,6 @@ export default function Home({ posts }) {
         <section class={styles.nav}>
         <ul class={styles.navlist}>
             <li class={styles.navlistitem}><Link href="/">Home</Link></li>
-            <li class={styles.navlistitem}><Link href="/writing">Writing</Link></li>
-            <li class={styles.navlistitem}><Link href="/5a141841-32fc-4812-9900-f07e91cbe2a6">Scrapbook</Link></li>
           </ul>
         </section>
         <section className={styles.maincontent}>
@@ -36,25 +34,20 @@ export default function Home({ posts }) {
             width="150"
             src={profilePic}
             />
-          <h1>Oli Kitchin</h1>
+          <h1>David</h1>
           <p>
-          Cyber Risk Consultant @ Deloitte. Passionate about people, technology and the great outdoors. 
+          Software Engineer. Passionate about technology and hiking.
           </p>
           <div className={styles.socialsbox}>
             
-            <a href="mailto:oli.kitchin@outlook.com"><Image src={mailIcon} width="32" height="32" quality="100"></Image></a>
-            <a href="https://www.linkedin.com/in/oli-kitchin-3108a714a/"><Image src={linkedinIcon} width="32" height="32"></Image></a>
-            <a href="https://medium.com/@olikitchin"><Image src={mediumIcon} width="32" height="32" ></Image></a>
-            <a href="https://twitter.com/olikitchin"><Image src={twitterIcon} width="32" height="32" ></Image></a>
+            <a href="mailto:hi@david.com"><Image src={mailIcon} width="32" height="32" quality="100"></Image></a>
+            <a href="https://www.linkedin.com/"><Image src={linkedinIcon} width="32" height="32"></Image></a>
+            <a href="https://medium.com/"><Image src={mediumIcon} width="32" height="32" ></Image></a>
+            <a href="https://twitter.com/"><Image src={twitterIcon} width="32" height="32" ></Image></a>
           </div>
           <h3>My Experience</h3>
           <hr></hr>
-          <p>I’m currently working as a Tech Risk and Cybersecurity Analyst for Goldman Sachs after spending a year at Deloitte as a Cyber Risk Consultant.</p>
-          <p>Previously I’ve worked the outdoor education industry for The Bushcraft Company where I ran residential courses to inspire a passion for the outdoors in the next generation.</p>
-          <h3>What you'll find here</h3>
-          <hr></hr>
-          <p><Link href="/writing">Writing</Link> - Ramblings on anything that’s caught my interest</p>
-          <p><Link href="/5a141841-32fc-4812-9900-f07e91cbe2a6">Scrapbook</Link> - Snippits and Takeaways from the best content I’ve come across</p>
+          <p>I’m currently working on an awesome project using AI to keep people safe, I can't wait to tell everyone more about it!</p>
           </div>
         </section>
       </main>
