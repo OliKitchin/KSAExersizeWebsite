@@ -49,7 +49,7 @@ export default function Home({ posts }) {
           </div>
           <h3>My Experience</h3>
           <hr></hr>
-          <p>I’m currently working as a Cyber Risk Consultant for Deloitte after graduating from the University of Exeter with a 1st in Computer Science.</p>
+          <p>I’m currently working as a Tech Risk and Cybersecurity Analyst for Goldman Sachs after spending a year at Deloitte as a Cyber Risk Consultant.</p>
           <p>Previously I’ve worked the outdoor education industry for The Bushcraft Company where I ran residential courses to inspire a passion for the outdoors in the next generation.</p>
           <h3>What you'll find here</h3>
           <hr></hr>
