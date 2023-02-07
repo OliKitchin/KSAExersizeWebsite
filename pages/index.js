@@ -22,7 +22,6 @@ export default function Home({ posts }) {
         <ul class={styles.navlist}>
             <li class={styles.navlistitem}><Link href="/">Home</Link></li>
           </ul>
-          <p>Fictious Website Created for Cybersecurity Training Purposes Only</p>
         </section>
         <section className={styles.maincontent}>
           <div className={styles.homepagecontent}>
@@ -32,7 +31,7 @@ export default function Home({ posts }) {
             src={profilePic}
             />
           <h1>David Smith</h1>
-          <p> Software Developer for Mi5. Passionate about technology and hiking.
+          <p> Software Developer for Mi7. Passionate about technology and hiking.
           </p>
           <div className={styles.socialsbox}>
             
@@ -43,7 +42,7 @@ export default function Home({ posts }) {
           </div>
           <h3>My Experience</h3>
           <hr></hr>   
-          <p>I've just started at Mi5 and am I’m currently working on an awesome project that's using AI to keep people safe. I can't wait to tell everyone more about it!</p>
+          <p>I've just started at Mi7 and am I’m currently working on an awesome project that's using AI to keep people safe. I can't wait to tell everyone more about it!</p>
           </div>
         </section>
       </main>
