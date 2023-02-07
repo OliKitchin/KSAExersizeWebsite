@@ -1,8 +1,5 @@
 import Head from "next/head";
 import Link from "next/link";
-import { useRouter } from 'next/router'
-import { getDatabase } from "../lib/notion";
-import { Text } from "./[id].js";
 import styles from "./index.module.css";
 import Image from "next/image"
 import profilePic from '../public/1629794746074_1.png'
@@ -11,7 +8,6 @@ import mediumIcon from "../public/medium.svg"
 import linkedinIcon from "../public/5282542_linkedin_network_social network_linkedin logo_icon.svg"
 import twitterIcon from "../public/104501_twitter_bird_icon.svg"
 
-export const databaseId = process.env.NOTION_DATABASE_ID;
 
 export default function Home({ posts }) {
   return (
@@ -54,14 +50,3 @@ export default function Home({ posts }) {
     </div>
   );
 }
-
-export const getStaticProps = async () => {
-  const database = await getDatabase(databaseId);
-
-  return {
-    props: {
-      posts: database,
-    },
-    revalidate: 1,
-  };
-};
