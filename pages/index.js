@@ -2,7 +2,7 @@ import Head from "next/head";
 import Link from "next/link";
 import styles from "./index.module.css";
 import Image from "next/image"
-import profilePic from '../public/1629794746074_1.png'
+import profilePic from '../public/selfie-image.jpg'
 import mailIcon from "../public/email.svg"
 import mediumIcon from "../public/medium.svg"
 import linkedinIcon from "../public/5282542_linkedin_network_social network_linkedin logo_icon.svg"
