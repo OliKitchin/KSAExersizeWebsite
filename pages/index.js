@@ -14,7 +14,7 @@ export default function Home({ posts }) {
     <div>
       <Head>
         <title>David</title>
-        <link rel="icon" href="/favicon.png" />
+        <link rel="icon" href="/selfie-image.jpg" />
       </Head>
 
       <main className={styles.container}>
